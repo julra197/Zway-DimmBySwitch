@@ -36,12 +36,6 @@ DimmBySwitch.prototype.init = function (config) {
         			level = vDev.get("metrics:level"),
         			newLevel = level + magnitude;
         		vDev.performCommand("exact", { level: newLevel });
-        	/**	self.controller.addNotification(
-    					"error",
-    					sceneLe,
-    					"module",
-    					"DimmBySwitch"
-    			);*/
         	});
         }
     }
