@@ -1,0 +1,199 @@
+{
+	"singleton" : false,
+	"dependencies": [],
+	"category": "complex_applications",
+	"author": "Ralf Ebert",
+	"homepage": "http://smarthomespezialist.de",
+	"icon": "icon.png",
+        "moduleName": "DimmBySwitch",
+	"version": "1.0",
+	"maturity": "beta",
+	"repository": {
+		"type": "git",
+		"source": "https://github.com/julra197/z-way-DimmBySwitch"
+	},
+	"defaults" : {
+		"title" : "__m_title__",
+		"description" : "__m_descr__"
+	},
+	"schema": {
+		"type": "object",
+		"properties": {
+			"sourceDevice": {
+				"type": "object",
+				"properties": {
+					"selDev": {
+						"type":"string",
+						"enum": ["switchBinary", "sensorDiscrete"],
+						"required": true
+					},
+					"switchBinary": {
+						"type": "object",
+						"dependencies":"selDev",
+						"properties": {
+							"device": {
+								"field": "enum",
+								"datasource": "namespaces",
+								"enum": "namespaces:devices_switchBinary:deviceId",
+								"required": true
+							},
+							"status": {
+								"type": "integer",
+								"enum": ["off", "on"],
+								"required": true
+							}
+						}
+					},
+					"sensorDiscrete": {
+						"type": "object",
+						"dependencies":"selDev",
+						"properties": {
+							"device": {
+								"field": "enum",
+								"datasource": "namespaces",
+								"enum": "namespaces:devices_sensorDiscrete:deviceId",
+								"required": true
+							},
+							"level": {
+								"type": "string",
+								"required": true
+							}
+						}
+					}
+				}
+			},
+			"magnitude": {
+				"type": "object",
+				"properties": {
+					"magnitudeValue": {
+						"type": "integer",
+						"minimum": -99,
+						"maximum": 99,
+						"required": true
+					}
+				}
+			},
+			"dimmer": {
+				"type": "array",
+				"items": {
+					"type": "object",
+					"properties": {
+						"selDim": {
+							"type":"string",
+							"enum": ["switchMultilevel"],
+							"required": true
+						},
+						"switchMultilevel":{
+							"type": "object",
+							"dependencies":"selDim",
+							"properties": {
+								"target": {
+									"type":"string",
+									"datasource": "namespaces",
+									"enum": "namespaces:devices_switchMultilevel:deviceId",
+									"required": true
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	},
+	"options": {
+		"fields": {
+			"sourceDevice": {
+				"label": "__l_event_sources__",
+				"fields": {
+					"selDev": {
+						"type": "select",
+						"removeDefaultNone": false,
+						"noneLabel": "__l_choose__",
+						"label":"__l_dev__",
+						"optionLabels": ["__switchBinary__", "__sensorDiscrete__"]
+					},
+					"switchBinary": {
+						"dependencies": {
+							"selDev": "switchBinary"
+						},
+						"fields": {
+							"device": {
+								"type": "select",
+								"removeDefaultNone": false,
+								"noneLabel": "__l_choose_dev__",
+								"datasource": "namespaces",
+								"field": "optionLabels",
+								"optionLabels": "namespaces:devices_switchBinary:deviceName"
+							},
+							"status": {
+								"optionLabels": ["__off__", "__on__"]
+							}
+						}
+					},
+					"sensorDiscrete": {
+						"dependencies": {
+							"selDev": "sensorDiscrete"
+						},
+						"fields": {
+							"device": {
+								"type": "select",
+								"removeDefaultNone": false,
+								"noneLabel": "__l_choose_dev__",
+								"datasource": "namespaces",
+								"field": "optionLabels",
+								"optionLabels": "namespaces:devices_sensorDiscrete:deviceName"
+							},
+							"level": {
+								"label": "__l_controller_action__",
+								"helper": "__h_controller_action__"
+							}
+						}
+					}
+				}
+			},
+			"magnitude": {
+				"label": "__l_event_magnitude__",
+				"fields": {
+					"magnitudeValue": {
+						"label": "__l_magnitudeValue__",
+                		"helper": "__h_magnitudeValue__"
+					}
+				}
+			},
+			"dimmer": {
+				"label": "__l_actors__",
+				
+				"fields": {
+					"item": {
+					
+						"fields": {
+							"selDim": {
+								"type": "select",
+								"removeDefaultNone": false,
+								"noneLabel": "__l_choose__",
+								"label":"__l_dev__",
+								"optionLabels": ["__switchMultilevel__"]
+							},
+							"switchMultilevel": {
+								"dependencies": {
+									"selDim": "switchMultilevel"
+								},
+								"fields":{
+									"target" :{
+										"type": "select",
+										"removeDefaultNone": false,
+										"noneLabel": "__l_choose_dev__",
+										"label": "__l_target_device__",
+										"datasource": "namespaces",
+										"field": "optionLabels",
+										"optionLabels": "namespaces:devices_switchMultilevel:deviceName"
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

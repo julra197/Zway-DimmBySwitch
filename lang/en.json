@@ -1,0 +1,23 @@
+{
+	"m_title":"Dimm by Switch",
+	"m_descr":"Use a switch to increment or decrement the value of a dimmable device.<br><brSettings:<br><ul><li>Select a switch</li><li>Define the magnitude of the in-/decrement</li><li>Select one or more dimmable devices.</li></ul>GitHub: https://github.com/julra197/z-way-DimmBySwitch",
+	"l_event_sources":"Source",
+	"l_event_magnitude":"Magnitude",
+	"l_actors":"Dimmer",
+	"on":"On",
+	"off":"Off",
+	"l_level":"Level",
+	"level": "Set Level",
+	"l_dev":"Filter by Type",
+	"switchBinary":"Binary Switch",
+	"switchMultilevel":"Multilevel Switch",
+	"l_target_device":"Device",
+	"l_magnitudeValue": "Magnitutde of the in-/decrement",
+	"h_magnitudeValue": "Integer Value, e.g. 15 or -15 -> positive value: increment, negative value: decrement",
+	"l_choose":"--- Choose a device type ---",
+	"l_choose_dev":"--- Choose a device ---",
+	"l_choose_controller_action":"--- Choose a controller action ---",
+	"l_controller_action":"Controller Actions",
+	"h_controller_action":"The action is described with a two-digit value: The first digit is the button number, the second digit points to the action of this button (0=short press, 1=release, 2=hold, 3=short press two times, 4 = short press three times, and so on. Examples: Double Click button 2 => 23, Single Click button 1 = 10)",
+	"sensorDiscrete":"Scene Controller"
+}

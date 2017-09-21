@@ -1,0 +1,23 @@
+{
+	"m_title":"Dimmen mit Switch",
+	"m_descr":"Mit dieser App kann ein Switch oder Scene-Controller verwendet werden, um ein dimmbares Gerät zu steueren.<br><br>Einstellungen:<br><ul><li>Wähelen Sie einen Switch aus.</li><li>Geben Sie das Intervall ein, mit dem der Wert des Gerätes herhöt oder reduziert wird.</li><li>Wählen Sie eines oder mehrere dimmbare Devices aus.</li></ul>GitHub: https://github.com/julra197/z-way-DimmBySwitch",
+	"l_event_sources":"Auslöser",
+	"l_event_magnitude":"Intervall",
+	"l_actors":"Dimmer",
+	"on":"On",
+	"off":"Off",
+	"l_level":"Level",
+	"level": "Set Level",
+	"l_dev":"Gerät auswählen",
+	"switchBinary":"Binary Switch",
+	"switchMultilevel":"Multilevel Switch",
+	"l_target_device":"Gerät",
+	"l_magnitudeValue": "Intervall eingaben",
+	"h_magnitudeValue": "nur ganze Zahlen, z.B. 15 oder -15 -> positiver Wert: erhöhen, negativer Wert: reduzieren",
+	"l_choose":"--- Gerätetyp auswählen ---",
+	"l_choose_dev":"--- Gerät auswählen ---",
+	"l_choose_controller_action":"--- Choose a controller action ---",
+	"l_controller_action":"Controller Auslöser:",
+	"h_controller_action":"Der Auslöser wird mit einer zweistelligen Zahl angegeben: Die erste Ziffer beschreibt den Button, die Zweite die Aktion des Buttons (0=kurzes Drücken, 1=Loslassen, 2=halten, 3=doppel Klick, 4 = dreifach Klick, und so weiter. z.B.: doppel Klick auf Button 2 => 23, einfaches Drücken auf Button 1 = 10)",
+	"sensorDiscrete":"Scene Controller"
+}
