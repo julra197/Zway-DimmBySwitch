@@ -10,7 +10,7 @@
 	"maturity": "beta",
 	"repository": {
 		"type": "git",
-		"source": "https://github.com/julra197/z-way-DimmBySwitch"
+		"source": "https://github.com/julra197/Zway-DimmBySwitch"
 	},
 	"defaults" : {
 		"title" : "__m_title__",

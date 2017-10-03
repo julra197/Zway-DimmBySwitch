@@ -1,6 +1,6 @@
 {
 	"m_title":"Dimmen mit Switch",
-	"m_descr":"Mit dieser App kann ein Switch oder Scene-Controller verwendet werden, um ein dimmbares Gerät zu steueren.<br><br>Einstellungen:<br><ul><li>Wähelen Sie einen Switch aus.</li><li>Geben Sie das Intervall ein, mit dem der Wert des Gerätes herhöt oder reduziert wird.</li><li>Wählen Sie eines oder mehrere dimmbare Devices aus.</li></ul>GitHub: https://github.com/julra197/z-way-DimmBySwitch",
+	"m_descr":"Mit dieser App kann ein Switch oder Scene-Controller verwendet werden, um ein dimmbares Gerät zu steueren.<br><br>Einstellungen:<br><ul><li>Wähelen Sie einen Switch aus.</li><li>Geben Sie das Intervall ein, mit dem der Wert des Gerätes herhöt oder reduziert wird.</li><li>Wählen Sie eines oder mehrere dimmbare Devices aus.</li></ul>GitHub: https://github.com/julra197/Zway-DimmBySwitch",
 	"l_event_sources":"Auslöser",
 	"l_event_magnitude":"Intervall",
 	"l_actors":"Dimmer",
