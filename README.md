@@ -1,4 +1,4 @@
-# z-way-DimmBySwitch
+# Zway-DimmBySwitch
 Using a switch, e.g. a binary switch to increment or decrement the value of a dimmable device.
 
 # Settings:
