@@ -1,6 +1,6 @@
 {
 	"m_title":"Dimm by Switch",
-	"m_descr":"Use a switch to increment or decrement the value of a dimmable device.<br><brSettings:<br><ul><li>Select a switch</li><li>Define the magnitude of the in-/decrement</li><li>Select one or more dimmable devices.</li></ul>GitHub: https://github.com/julra197/z-way-DimmBySwitch",
+	"m_descr":"Use a switch to increment or decrement the value of a dimmable device.<br><brSettings:<br><ul><li>Select a switch</li><li>Define the magnitude of the in-/decrement</li><li>Select one or more dimmable devices.</li></ul>GitHub: https://github.com/julra197/Zway-DimmBySwitch",
 	"l_event_sources":"Source",
 	"l_event_magnitude":"Magnitude",
 	"l_actors":"Dimmer",

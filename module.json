@@ -7,7 +7,7 @@
 	"icon": "icon.png",
         "moduleName": "DimmBySwitch",
 	"version": "1.0",
-	"maturity": "beta",
+	"maturity": "stable",
 	"repository": {
 		"type": "git",
 		"source": "https://github.com/julra197/Zway-DimmBySwitch"
