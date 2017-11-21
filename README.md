@@ -9,5 +9,5 @@ Using a switch, e.g. a binary switch to increment or decrement the value of a di
 # Purpose
 You can use a NodOn wall switch (or another scene controller) to controll a dimmer without association of the devices.
 
-	More about smart home solutions:
-	http://smarthomespezialist.de
+#### More about smart home solutions:
+http://smarthomespezialist.de
